@@ -17,12 +17,12 @@ const usersRouter = require("./routes/users");
 var app = express();
 var oktaClient = new okta.Client({
   orgUrl: 'https://dev-323855.okta.com',
-  token: '00I9ACczEQeVsZw03W2vFNw5do3ldGhr012Xv2JcO3'
+  token: ''
 });
 const oidc = new ExpressOIDC({
   issuer: "https://dev-323855.okta.com/oauth2/default",
   client_id: '0oa22unmxmWiWhu4g357',
-  client_secret: 'byTSYlou0urwLS0_Jf89ojOBsZsfwO9XlBKBWuD7',
+  client_secret: '',
   redirect_uri: 'http://localhost:3000/users/callback',
   scope: "openid profile",
   routes: {
